@@ -1,8 +1,7 @@
 ####    This code underlies a shiny app that calculates chronotype and social jetlag, to be used for public outreach activities, e.g. see:
 ####    You are free to modify this code under a GNU General Public License (see below), e.g. translate it or improve its design or functionality
 ####    For more info and existing translations, see: 
-####    -     https://laurakervezee.net/resources/pop-up-science-early-bird-or-night-owl/
-####    -     
+####    -     https://github.com/lkervezee/chronotype-app 
 ####    The activity is intended for purely educational purposes, not for research purposes. The app does not story any participant data.
 ####    
 ####    Copyright (C) 2022 Laura Kervezee (l.kervezee@lumc.nl)  
