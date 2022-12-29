@@ -1,0 +1,13 @@
+name: chronotype
+title: chronotype
+username:
+account: bioklok
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5892272
+bundleId: 5704810
+url: https://bioklok.shinyapps.io/chronotype/
+when: 1647777431.05027
+lastSyncTime: 1647777431.05027
+asMultiple: FALSE
+asStatic: FALSE

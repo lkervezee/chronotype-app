@@ -1,0 +1,12 @@
+name: NEMOChronotype
+title: NEMOChronotype
+username:
+account: bioklok
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1288170
+bundleId: 2502004
+url: https://bioklok.shinyapps.io/NEMOChronotype/
+when: 1571146396.92406
+asMultiple: FALSE
+asStatic: FALSE

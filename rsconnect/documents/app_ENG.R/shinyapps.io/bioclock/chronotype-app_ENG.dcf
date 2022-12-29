@@ -1,0 +1,14 @@
+name: chronotype-app_ENG
+title: chronotype-app_ENG
+username:
+account: bioclock
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7954163
+bundleId: 6680754
+url: https://bioclock.shinyapps.io/chronotype-app_ENG/
+when: 1672305523.273
+lastSyncTime: 1672305523.27302
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app_NLD.R
