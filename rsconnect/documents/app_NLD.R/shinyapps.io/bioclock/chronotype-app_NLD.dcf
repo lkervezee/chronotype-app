@@ -5,10 +5,8 @@ account: bioclock
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7954197
-bundleId: 6680774
+bundleId: 7635311
 url: https://bioclock.shinyapps.io/chronotype-app_NLD/
-when: 1672306560.13423
-lastSyncTime: 1672306560.13424
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: app_ENG.R|app_NLD_old.R
+ignoredFiles: .gitattributes|app_ENG.R|LICENSE|README.md
