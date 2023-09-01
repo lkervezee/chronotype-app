@@ -133,14 +133,15 @@ server <- function(input, output) {
     
     days_work <- as.numeric(input$n_work)
     
-    #start_free <- as.POSIXct("2019-10-04 23:10:00", tz="UTC")
-    #end_free <- as.POSIXct("2019-10-05 07:50:00", tz="UTC")
-    #
-    #start_work <- as.POSIXct("2019-10-05 00:00:00", tz="UTC")
-    #end_work <- as.POSIXct("2019-10-05 08:00:00", tz="UTC")
-    #
     #days_work <- 5
+    #start_work <- as.POSIXct("2019-10-05 01:00:00", tz="UTC")
+    #end_work <- as.POSIXct("2019-10-05 09:00:00", tz="UTC")
+    #
+    #start_free <- as.POSIXct("2019-10-04 22:30:00", tz="UTC")
+    #end_free <- as.POSIXct("2019-10-05 08:00:00", tz="UTC")
     
+
+  
     sleepduration_work <- difftime(end_work, start_work, units="hours")
     sleepduration_free <- difftime(end_free, start_free, units="hours")
     
@@ -158,7 +159,7 @@ server <- function(input, output) {
     
     socialjetlag <- as.numeric(difftime(midsleep_free, midsleep_work, units="hours"))
     
-    socialjetlag_text <- paste(strsplit(as.character(socialjetlag), "[.]")[[1]][1], "uur en", round((socialjetlag-floor(socialjetlag))*60), "minuten.")     # 
+    socialjetlag_text <- paste(strsplit(as.character(socialjetlag), "[.]")[[1]][1], "uur en", abs(round((socialjetlag-sign(socialjetlag)*floor(abs(socialjetlag)))*60)), "minuten.")     # 
     chronotype_num <- sapply(strsplit(format(chronotype, "%H:%M"), ":"), FUN=function(x) as.numeric(x[1])+as.numeric(x[2])/60)
     cat <- ifelse(chronotype_num <= 1.25, "een extreem ochtendmens",
                   ifelse(chronotype_num > 1.25 & chronotype_num <= 2.25, "nogal een ochtendmens",

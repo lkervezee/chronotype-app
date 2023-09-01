@@ -159,7 +159,7 @@ server <- function(input, output) {
      
      socialjetlag <- as.numeric(difftime(midsleep_free, midsleep_work, units="hours"))
      
-     socialjetlag_text <- paste(strsplit(as.character(socialjetlag), "[.]")[[1]][1], "hours and", round((socialjetlag-floor(socialjetlag))*60), "minutes.")     # 
+     socialjetlag_text <- paste(strsplit(as.character(socialjetlag), "[.]")[[1]][1], "hours and", abs(round((socialjetlag-sign(socialjetlag)*floor(abs(socialjetlag)))*60)), "minutes.")     # 
      chronotype_num <- sapply(strsplit(format(chronotype, "%H:%M"), ":"), FUN=function(x) as.numeric(x[1])+as.numeric(x[2])/60)
      cat <- ifelse(chronotype_num <= 1.25, "an extremely early type",
                    ifelse(chronotype_num > 1.25 & chronotype_num <= 2.25, "a moderately early type",
